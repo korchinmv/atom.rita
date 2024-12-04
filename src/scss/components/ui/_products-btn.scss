@@ -1,0 +1,55 @@
+.products-btn {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  column-gap: 9px;
+  border: 1px solid rgba(66, 79, 101, 0.5);
+  border-radius: 10px;
+  padding: 12px 16px;
+  transition: background-color 0.3s;
+
+  &--active {
+    .products-btn__arrow-down {
+      transform: rotate(180deg);
+    }
+  }
+
+  &:hover {
+    background-color: rgba(66, 79, 101, 0.1);
+
+    .products-btn__text {
+      color: var(--accent);
+    }
+
+    .products-btn__arrow-down {
+      path {
+        stroke: var(--accent);
+      }
+    }
+
+    .bento-menu__circle {
+      background-color: var(--accent);
+    }
+  }
+
+  &__bento-menu {
+    margin-bottom: 3px;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'NunitoSansSemiBold';
+    color: var(--gray);
+    transition: color 0.3s;
+  }
+
+  &__arrow-down {
+    transition: transform 0.3s;
+
+    path {
+      transition: all 0.3s;
+    }
+  }
+}

@@ -1,1 +1,5 @@
-// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+@include font-face('NunitoSansBold', '../fonts/NunitoSans-Bold', 700, normal);
+@include font-face('NunitoSansExtraBold', '../fonts/NunitoSans-ExtraBold', 800, normal);
+@include font-face('NunitoSansLight', '../fonts/NunitoSans-Light', 300, normal);
+@include font-face('NunitoSansRegular', '../fonts/NunitoSans-Regular', 400, normal);
+@include font-face('NunitoSansSemiBold', '../fonts/NunitoSans-SemiBold', 600, normal);

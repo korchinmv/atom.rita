@@ -1,1 +1,99 @@
-// ваш код
+.header {
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 13px 0;
+
+  @media screen and (width <= 768px) {
+    padding: 16px 0;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav-left {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  &__logo {
+    margin-right: 40px;
+    transition: opacity 0.3s;
+    flex-shrink: 0;
+
+    @media screen and (width <= 990px) {
+      margin-right: 20px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+
+    @media screen and (width <= 768px) {
+      display: none;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    @media screen and (width <= 990px) {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__link {
+    color: var(--gray);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'NunitoSansSemiBold';
+    transition: color 0.3s;
+
+    @media screen and (width <= 990px) {
+      font-size: 18px;
+    }
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+
+  .products-btn__text {
+    @media screen and (width <= 990px) {
+      font-size: 18px;
+    }
+  }
+
+  &__products-btn {
+    &.products-btn {
+      @media screen and (width <= 768px) {
+        display: none;
+      }
+    }
+  }
+
+  &__hamburger-menu {
+    &.hamburger-menu {
+      display: none;
+
+      @media screen and (width <= 768px) {
+        display: block;
+      }
+    }
+  }
+}

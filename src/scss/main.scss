@@ -1,16 +1,18 @@
 // базовые подключения
-@import "vars";
-@import "mixins";
-@import "fonts";
-@import "settings";
+@import './vendor/normalize';
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'settings';
 
 // подключения компонентов страницы
-@import "./components/header";
+@import './components/header';
+@import './components/footer';
 
-// тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}
+@import './components/elements/socials';
+
+@import './components/ui/overlay';
+@import './components/ui/bento-menu';
+@import './components/ui/products-btn';
+@import './components/ui/hamburger-menu';
+@import './components/ui/hamburger-lines';

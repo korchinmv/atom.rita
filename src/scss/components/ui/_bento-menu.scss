@@ -1,0 +1,72 @@
+.bento-menu {
+  cursor: pointer;
+  position: relative;
+  height: 17px;
+  width: 17px;
+  transition: all 0.3s ease-in-out;
+
+  &--active {
+    transform: rotate(-45deg);
+
+    .bento-menu__circle {
+      height: 2px;
+      width: 2px;
+    }
+
+    .bento-menu__circle.r1.c1,
+    .bento-menu__circle.r1.c3,
+    .bento-menu__circle.r3.c1,
+    .bento-menu__circle.r3.c3 {
+      left: 40%;
+      top: 40%;
+    }
+
+    .bento-menu__circle.r2.c1,
+    .bento-menu__circle.r2.c3 {
+      width: 49%;
+      border-radius: 3px;
+    }
+
+    .bento-menu__circle.r3.c2,
+    .bento-menu__circle.r1.c2 {
+      height: 49%;
+      border-radius: 3px;
+    }
+
+    .bento-menu__circle.r3.c2 {
+      top: 44%;
+    }
+
+    .bento-menu__circle.r2.c3 {
+      left: 44%;
+    }
+  }
+
+  &__circle {
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: var(--gray);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .r1 {
+    top: 0;
+  }
+  .r2 {
+    top: 40%;
+  }
+  .r3 {
+    top: 80%;
+  }
+  .c1 {
+    left: 0;
+  }
+  .c2 {
+    left: 40%;
+  }
+  .c3 {
+    left: 80%;
+  }
+}
