@@ -1,0 +1,38 @@
+.primary-button {
+  border-radius: 73px;
+  padding: 16px 32px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent);
+  border: 2px solid transparent;
+  transition: all 0.3s;
+
+  @media screen and (width <= 768px) {
+    padding: 12px 32px;
+  }
+
+  svg {
+    margin-left: 16px;
+
+    path {
+      transition: all 0.3s;
+    }
+  }
+
+  &:hover {
+    border-color: var(--dark-orange);
+    color: var(--dark-orange);
+    background-color: transparent;
+
+    svg {
+      path {
+        fill: var(--dark-orange);
+      }
+    }
+  }
+}
