@@ -1,8 +1,9 @@
 .socials {
   &__item {
-  }
-  &__link {
-  }
-  &__img {
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }

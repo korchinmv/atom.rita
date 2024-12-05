@@ -1,0 +1,62 @@
+.custom-select {
+  background-color: var(--white);
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(66, 79, 101, 0.2);
+  border-radius: 4px;
+  padding: 20px 16px 4px 16px;
+  height: 48px;
+  font-family: 'NunitoSansSemiBold';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: border-color 0.3s;
+
+  &:hover {
+    border-color: var(--accent);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    display: block;
+    width: 16px;
+    height: 8px;
+    background-image: url('../../../img/svg/icon-arrow-down.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.25s all ease;
+  }
+
+  //Сбрасываем стили дефолтного селекта
+  &__select {
+    cursor: pointer;
+    appearance: none;
+    display: block;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    color: inherit;
+    background: none;
+    width: 100%;
+    height: 30px;
+  }
+
+  &__option {
+    width: 100%;
+  }
+
+  &__label {
+    position: absolute;
+    left: 16px;
+    top: 5px;
+    font-size: 12px;
+    line-height: 1.33333;
+    color: var(--accent);
+  }
+}

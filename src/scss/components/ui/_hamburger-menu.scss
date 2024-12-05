@@ -7,4 +7,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    .hamburger-lines__line {
+      background-color: var(--accent);
+    }
+  }
 }

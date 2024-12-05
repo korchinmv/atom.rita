@@ -29,12 +29,12 @@
   }
 
   .line1 {
-    transform-origin: 37% 150%;
-    transition: transform 0.2s ease-in-out;
+    transform-origin: 35% 100%;
+    transition: all 0.2s ease-in-out;
   }
 
   .line2 {
-    transform-origin: 35% -80%;
-    transition: transform 0.2s ease-in-out;
+    transform-origin: 35% -50%;
+    transition: all 0.2s ease-in-out;
   }
 }
