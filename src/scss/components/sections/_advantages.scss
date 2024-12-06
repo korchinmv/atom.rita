@@ -1,0 +1,139 @@
+.advantages {
+  background-image: url('../img/pattern.png');
+  background-repeat: repeat;
+  padding: 80px 0 56px;
+
+  @media screen and (width <= 768px) {
+    background-image: none;
+    background-color: #eff3f8;
+  }
+
+  @media screen and (width <= 800px) {
+    padding: 64px 0 40px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    text-align: center;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__text {
+    display: none;
+
+    @media screen and (width <= 768px) {
+      display: block;
+      margin-bottom: 32px;
+      line-height: 1.4;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding-bottom: 80px;
+    margin-bottom: 64px;
+    position: relative;
+
+    @media screen and (width <= 768px) {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 16px;
+      padding-bottom: 0;
+      margin-bottom: 88px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: var(--gray-bg);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      @media screen and (width <= 768px) {
+        display: none;
+      }
+    }
+  }
+
+  &__item {
+    background-color: var(--white);
+    border-radius: 16px;
+    padding: 24px;
+
+    @media screen and (width <= 768px) {
+      padding: 16px;
+    }
+  }
+
+  &__item-title {
+    font-family: 'NunitoSansBold';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+
+    @media screen and (width <= 1024px) {
+      font-size: 22px;
+    }
+
+    @media screen and (width <= 768px) {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__item-list-text {
+    list-style: disc;
+    line-height: 1.375;
+    margin-left: 25px;
+  }
+
+  &__list-qty {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__list-qty-item {
+    max-width: 354px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  &__list-qty-num {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.1;
+    font-family: 'NunitoSansSemiBold';
+    margin-bottom: 4px;
+
+    @media screen and (width <= 768px) {
+      font-size: 36px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__list-qty-text {
+    line-height: 1.4;
+  }
+
+  &__list-qty-footnote {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(66, 79, 101, 0.6);
+    margin-top: 2px;
+
+    @media screen and (width <= 768px) {
+      display: none;
+    }
+  }
+}

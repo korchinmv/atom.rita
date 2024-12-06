@@ -1,0 +1,61 @@
+.reasons {
+  padding: 128px 0 300px;
+  background-image: url('../img/pattern.png');
+  background-repeat: repeat;
+
+  @media screen and (width <= 768px) {
+    background-image: none;
+    background-color: #eff3f8;
+    padding: 64px 0 285px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 32px;
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
+    @media screen and (width <= 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__item {
+  }
+  &__item-icon {
+    margin-bottom: 16px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 8px;
+    }
+  }
+  &__item-title {
+    font-weight: 700;
+    font-family: 'NunitoSansBold';
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+
+    @media screen and (width <= 768px) {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__item-text {
+    line-height: 1.4;
+  }
+}
+.container {
+}
+.section-title {
+}
+.gradient-text {
+}
+.gradient-text--first-blue {
+}

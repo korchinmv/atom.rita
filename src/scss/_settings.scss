@@ -10,20 +10,20 @@
   font-family: var(--font-family, sans-serif);
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+
+  &--no-scroll {
+    overflow: hidden;
+  }
 }
 
 .page__body {
   color: var(--gray);
   display: flex;
   flex-direction: column;
-  margin: 0;
   min-width: 375px;
   min-height: 100%;
   font-size: 16px;
-
-  &--no-scroll {
-    overflow: hidden;
-  }
+  margin: 0;
 }
 
 h1,
@@ -34,7 +34,6 @@ h4 {
 }
 
 ul {
-  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -84,4 +83,11 @@ button {
   background-clip: border-box;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+
+  &--first-blue {
+    background: linear-gradient(270deg, #f0a600 9%, #ee6c23 29%, #6cace4 49%, #025ea1 95%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }

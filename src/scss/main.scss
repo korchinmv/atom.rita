@@ -10,8 +10,13 @@
 @import './components/footer';
 
 @import './components/elements/socials';
+@import './components/elements/section-title';
 
 @import './components/sections/hero';
+@import './components/sections/tasks';
+@import './components/sections/advantages';
+@import './components/sections/victories';
+@import './components/sections/reasons';
 
 @import './components/ui/overlay';
 @import './components/ui/bento-menu';
@@ -23,3 +28,4 @@
 @import './components/ui/tabs';
 @import './components/ui/custom-select';
 @import './components/ui/primary-button';
+@import './components/ui/slider-progressbar';

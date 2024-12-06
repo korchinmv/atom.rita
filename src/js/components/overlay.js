@@ -5,6 +5,7 @@ const bentoMenu = productsBtn.querySelector(".bento-menu ");
 const hamburgerBtn = document?.querySelector(".header__hamburger-menu");
 const hamburgerLines = hamburgerBtn.querySelector(".hamburger-lines");
 const mobileMenu = document?.querySelector(".mobile-menu");
+const page = document?.querySelector(".page");
 
 overlay.addEventListener("click", () => {
   if (overlay.classList.contains("overlay--visible")) {
@@ -14,5 +15,6 @@ overlay.addEventListener("click", () => {
     bentoMenu.classList.remove("bento-menu--active");
     mobileMenu.classList.remove("mobile-menu--active");
     hamburgerLines.classList.remove("hamburger-lines--active");
+    page.classList.remove("page--no-scroll");
   }
 });

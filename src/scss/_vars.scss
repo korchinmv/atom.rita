@@ -1,7 +1,7 @@
 :root {
   // base
   --font-family: 'NunitoSansRegular', sans-serif;
-  --content-width: 1142px;
+  --content-width: 1110px;
   --container-offset: 16px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
@@ -12,6 +12,7 @@
   --dark-blue: #1b2535;
   --light-bg: #adbde7;
   --gray: #424f65;
+  --gray-bg: #d9d9d9;
   --light-gray: #fdfdfd;
   --overlay-color: rgba(0, 0, 0, 0.6);
   --white: #fff;

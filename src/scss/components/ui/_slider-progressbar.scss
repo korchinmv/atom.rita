@@ -1,0 +1,12 @@
+.slider-progressbar {
+  position: relative;
+  height: 2px !important;
+  border-radius: 2px;
+  background-color: var(--gray-bg);
+
+  .swiper-pagination-progressbar-fill {
+    background-color: var(--accent);
+    height: 2px;
+    border-radius: inherit;
+  }
+}

@@ -1,0 +1,139 @@
+.tasks {
+  background-image: url('../img/pattern.png');
+  background-repeat: repeat;
+  padding: 128px 0 64px;
+
+  @media screen and (width <= 1024px) {
+    padding-top: 80px;
+  }
+
+  @media screen and (width <= 768px) {
+    background-image: none;
+    background-color: #eff3f8;
+    padding-top: 64px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    text-align: center;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    @media screen and (width <= 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (width <= 768px) {
+      display: flex;
+      gap: 0;
+    }
+  }
+
+  &__list-slider {
+    z-index: 0;
+  }
+
+  &__wrapper {
+    @media screen and (width <= 768px) {
+      position: relative;
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: var(--gray-bg);
+        position: absolute;
+        bottom: -25px;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+
+    @media screen and (width <= 1024px) {
+      height: 296px;
+    }
+
+    &:hover {
+      .tasks__text-block {
+        background-color: var(--white);
+        transform: translateY(0);
+      }
+
+      .tasks__item-title {
+        color: var(--gray);
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__text-block {
+    padding: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(80%);
+    transition: all 0.3s;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+  }
+
+  &__item-title {
+    font-family: 'NunitoSansBold';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--white);
+    margin: 0 0 16px 0;
+    transition: color 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    svg {
+      display: none;
+      transform: rotate(180deg);
+
+      @media screen and (width <= 768px) {
+        display: inline-block;
+      }
+    }
+
+    @media screen and (width <= 768px) {
+      font-size: 18px;
+    }
+  }
+
+  &__list {
+    @media screen and (width <= 768px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__item-text {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 1.375;
+
+    @media screen and (width <= 768px) {
+      font-size: 14px;
+    }
+  }
+}

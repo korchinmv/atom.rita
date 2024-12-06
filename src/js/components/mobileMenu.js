@@ -6,12 +6,14 @@ const productsBtn = document?.querySelector(".mobile-menu__products-btn");
 const mobileContentBlock = document?.querySelector(".mobile-menu__content");
 const mobileMenuSelect = document?.querySelector("#mobile-menu-select");
 const contentList = document?.querySelectorAll(".mobile-menu__item-content");
+const page = document?.querySelector(".page");
 
 if (hamburgerBtn) {
   hamburgerBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("mobile-menu--active");
     hamburgerLines.classList.toggle("hamburger-lines--active");
     overlay.classList.toggle("overlay--visible");
+    page.classList.toggle("page--no-scroll");
   });
 }
 
