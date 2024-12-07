@@ -1,0 +1,121 @@
+.questions {
+  position: relative;
+  top: -174px;
+
+  @media screen and (width <= 768px) {
+    top: -240px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 32px;
+    background-color: var(--blue);
+    border-radius: 16px;
+
+    @media screen and (width <= 990px) {
+      flex-direction: column;
+    }
+
+    @media screen and (width <= 768px) {
+      padding: 24px 16px;
+    }
+  }
+
+  &__left {
+    margin-right: 15px;
+    max-width: 410px;
+
+    @media screen and (width <= 990px) {
+      margin: 0 0 48px;
+    }
+  }
+
+  &__icon {
+    @media screen and (width <= 990px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-family: 'NunitoSansBold';
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--white);
+
+    @media screen and (width <= 990px) {
+      margin-bottom: 8px;
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    line-height: 1.4;
+    margin-bottom: 60px;
+    color: var(--white);
+
+    @media screen and (width <= 990px) {
+      margin-bottom: 0;
+    }
+
+    @media screen and (width <= 576px) {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
+
+  &__form {
+    z-index: 1;
+    width: 100%;
+    max-width: 510px;
+
+    @media screen and (width <= 990px) {
+      max-width: 100%;
+      font-size: 18px;
+    }
+
+    .form__block {
+      @media screen and (width <= 576px) {
+        flex-direction: column;
+
+        .form__label {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .form__text {
+      @media screen and (width <= 768px) {
+        font-size: 14px;
+      }
+    }
+
+    .form__approval {
+      @media screen and (width <= 768px) {
+        margin-bottom: 16px;
+      }
+    }
+
+    .form__input,
+    .form__textarea {
+      @media screen and (width <= 576px) {
+        padding: 11px 16px;
+      }
+    }
+
+    .form__textarea {
+      @media screen and (width <= 576px) {
+        height: 96px;
+      }
+    }
+
+    .form__button {
+      @media screen and (width <= 576px) {
+        width: 100%;
+      }
+    }
+  }
+}
