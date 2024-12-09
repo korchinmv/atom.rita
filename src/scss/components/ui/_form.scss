@@ -1,6 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
+  z-index: 0;
 
   &__label {
     position: relative;

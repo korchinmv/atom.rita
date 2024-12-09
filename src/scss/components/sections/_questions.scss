@@ -1,9 +1,11 @@
 .questions {
   position: relative;
   top: -174px;
+  margin-bottom: -174px;
 
   @media screen and (width <= 768px) {
     top: -240px;
+    margin-bottom: -240px;
   }
 
   &__wrapper {
